@@ -23,8 +23,8 @@ import java.util.List;
 /**
  * 全局统一异常处理类
  *
- * @author zhouhp
- * @date 2021/3/1
+ * @author zengfeiyue
+ *
  **/
 @RestControllerAdvice
 public class GlobalExceptionAdvice {

@@ -10,10 +10,10 @@ import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseBodyAdvice;
 
 /**
- * 若控制层没有返回R对象，则在这里进行封装
+ * 统一对象返回
  *
- * @author zhouhp
- * @date 2022/1/18
+ * @author zengfeiyue
+ *
  **/
 @ControllerAdvice
 public class CommonResponseBodyAdvice implements ResponseBodyAdvice<Object> {

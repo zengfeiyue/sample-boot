@@ -2,6 +2,7 @@ package com.sample.common.enums;
 
 /**
  * 抽象响应接口
+ * @author zengfeiyue
  */
 public interface BaseResponse {
 

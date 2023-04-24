@@ -6,7 +6,7 @@ import java.io.Serializable;
 /**
  * 通用返回实体
  *
- * @author laiqiao
+ * @author zengfeiyue
  */
 public class Response<T> implements BaseResponse,Serializable {
     /**
