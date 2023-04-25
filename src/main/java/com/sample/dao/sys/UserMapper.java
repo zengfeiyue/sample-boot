@@ -1,4 +1,4 @@
-package com.sample.dao;
+package com.sample.dao.sys;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.sample.model.sys.User;

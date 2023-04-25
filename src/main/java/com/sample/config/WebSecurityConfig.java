@@ -44,7 +44,7 @@ public class WebSecurityConfig {
         http.csrf().disable();
         http.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
         http.authorizeHttpRequests((requests) -> requests
-                .requestMatchers("/login")
+                .requestMatchers("/**","/login")
                 .permitAll()
                 .anyRequest()
                 .access(authorizationManager));

@@ -1,6 +1,6 @@
 package com.sample.common.web;
 
-import com.sample.common.annotation.IgoreResponseBodyAdvice;
+import com.sample.common.annotation.IgnoreResponseBodyAdvice;
 import org.springframework.core.MethodParameter;
 import org.springframework.http.MediaType;
 import org.springframework.http.converter.HttpMessageConverter;
@@ -31,8 +31,8 @@ public class CommonResponseBodyAdvice implements ResponseBodyAdvice<Object> {
 
         //若类或方法上存在跳过注解，则跳过
         Class<?> declaringClass = methodParameter.getDeclaringClass();
-        boolean clazzHasAnnotation = declaringClass.isAnnotationPresent(IgoreResponseBodyAdvice.class);
-        boolean methodHasAnnotation = methodParameter.hasMethodAnnotation(IgoreResponseBodyAdvice.class);
+        boolean clazzHasAnnotation = declaringClass.isAnnotationPresent(IgnoreResponseBodyAdvice.class);
+        boolean methodHasAnnotation = methodParameter.hasMethodAnnotation(IgnoreResponseBodyAdvice.class);
         if (clazzHasAnnotation || methodHasAnnotation) {
             return result;
         }

@@ -1,9 +1,9 @@
 package com.sample.common.constant;
 
 /**
- * 常量
+ * redis key 常量
  *
  * @author zengfeiyue
  */
-public class SampleConstant {
+public class RedisKey {
 }

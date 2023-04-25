@@ -10,7 +10,7 @@ public enum ResponseEnum implements BaseResponse {
     /**
      * Parameter传参，请求参数缺失异常
      */
-    MISSING_SERVLET_REQUEST_PARAMETER(460, "请求参数缺失异常，参数名：{}，类型为：{}"),
+    MISSING_SERVLET_REQUEST_PARAMETER(460, "请求参数缺失异常，参数名：%s，类型为：%s"),
 
     /**
      * 请求数据经过httpMessageConverter出错
@@ -20,14 +20,14 @@ public enum ResponseEnum implements BaseResponse {
     /**
      * 无法映射枚举类型
      */
-    ENUM_CONVERTER_ERROR(461, "{} 超出枚举的限定范围"),
+    ENUM_CONVERTER_ERROR(461, "%s 超出枚举的限定范围"),
 
     /**
      * 参数校验失败
      * <p>
      * 拦截@Valid和@Validated校验失败返回的错误提示
      */
-    VALIDATED_RESULT_ERROR(462, "参数校验失败，请检查参数的传值是否正确，具体信息：{}"),
+    VALIDATED_RESULT_ERROR(462, "参数校验失败，请检查参数的传值是否正确，具体信息：%s"),
 
     /**
      * 不受支持的媒体类型
@@ -37,7 +37,7 @@ public enum ResponseEnum implements BaseResponse {
     /**
      * 不受支持的http请求方法
      */
-    HTTP_METHOD_NOT_SUPPORT(405, "当前接口不支持{}方式请求"),
+    HTTP_METHOD_NOT_SUPPORT(405, "当前接口不支持%s方式请求"),
 
     /**
      * 成功
