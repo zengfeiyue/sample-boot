@@ -1,6 +1,7 @@
-package com.sample.service.sys;
+package com.sample.service.sys.impl;
 
 import com.sample.model.sys.User;
+import com.sample.service.sys.UserService;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;

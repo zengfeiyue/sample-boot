@@ -1,6 +1,6 @@
 package com.sample.controller;
 
-import com.sample.dao.sys.UserMapper;
+import com.sample.mapper.sys.UserMapper;
 import com.sample.model.sys.User;
 import jakarta.annotation.Resource;
 import org.springframework.data.domain.Page;
