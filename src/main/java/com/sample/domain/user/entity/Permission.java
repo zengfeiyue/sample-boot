@@ -1,9 +1,11 @@
-package com.sample.domain.entity;
+package com.sample.domain.user.entity;
 
 import java.io.Serializable;
 import java.util.Date;
 
 /**
+ * @author zengfeiyue
+ *
  * 系统权限
  */
 public class Permission implements Serializable {

@@ -1,7 +1,7 @@
 package com.sample.api.controller;
 
-import com.sample.domain.repository.UserMapper;
-import com.sample.domain.entity.User;
+import com.sample.domain.user.UserMapper;
+import com.sample.domain.user.entity.User;
 import jakarta.annotation.Resource;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;

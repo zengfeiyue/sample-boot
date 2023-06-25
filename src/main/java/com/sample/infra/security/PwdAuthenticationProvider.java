@@ -1,6 +1,6 @@
 package com.sample.infra.security;
 
-import com.sample.application.service.sys.UserService;
+import com.sample.domain.user.service.sys.UserService;
 import jakarta.annotation.Resource;
 import org.springframework.security.authentication.AuthenticationProvider;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
