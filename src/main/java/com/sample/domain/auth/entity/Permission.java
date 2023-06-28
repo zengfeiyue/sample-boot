@@ -1,4 +1,4 @@
-package com.sample.domain.user.entity;
+package com.sample.domain.auth.entity;
 
 import java.io.Serializable;
 import java.util.Date;

@@ -19,8 +19,6 @@ public class User implements UserDetails,Serializable {
 
     private String nickName;
 
-
-
     public Integer getId() {
         return id;
     }
