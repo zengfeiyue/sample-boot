@@ -1,5 +1,9 @@
 package com.sample.domain.auth.entity;
 
+import com.sample.domain.auth.entity.valueobject.RoleId;
+import com.sample.domain.auth.repository.RoleRepository;
+import com.sample.infra.repository.po.RolePO;
+
 /**
  * 角色
  *
@@ -7,33 +11,43 @@ package com.sample.domain.auth.entity;
  */
 public class Role {
 
-    private String roleId;
+    /**
+     * 角色id
+     */
+    private RoleId roleId;
 
+    /**
+     * 角色名称
+     */
     private String roleName;
 
+    /**
+     * 备注
+     */
     private String remark;
 
-    public String getRoleId() {
-        return roleId;
+    /**
+     * 角色聚合仓储接口
+     */
+    private RoleRepository roleRepository;
+
+    /**
+     * 构造领域对象
+     *
+     * @return
+     */
+    public static Role of(){
+        return new Role();
     }
 
-    public void setRoleId(String roleId) {
-        this.roleId = roleId;
-    }
-
-    public String getRoleName() {
-        return roleName;
-    }
-
-    public void setRoleName(String roleName) {
-        this.roleName = roleName;
-    }
-
-    public String getRemark() {
-        return remark;
-    }
-
-    public void setRemark(String remark) {
-        this.remark = remark;
+    /**
+     * 加载
+     *
+     * @return
+     */
+    public void load(){
+        RolePO load = roleRepository.load(this.roleId.toString());
+        this.roleName = load.getRoleName();
+        this.remark = load.getRemark();
     }
 }
