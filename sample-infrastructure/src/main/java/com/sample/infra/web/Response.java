@@ -1,6 +1,7 @@
-package com.sample.infra.common.web;
-import com.sample.infra.enums.ResponseEnum;
+package com.sample.infra.web;
+
 import com.sample.infra.enums.BaseResponse;
+import com.sample.infra.enums.ResponseEnum;
 
 import java.io.Serializable;
 

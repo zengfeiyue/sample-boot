@@ -1,4 +1,4 @@
-package com.sample.infra.common.web;
+package com.sample.infra.web;
 
 import com.sample.infra.annotation.IgnoreResponseBodyAdvice;
 import org.springframework.core.MethodParameter;

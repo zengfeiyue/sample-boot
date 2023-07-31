@@ -1,6 +1,5 @@
 package com.sample.infra.security;
 
-import com.sample.domain.auth.service.sys.UserService;
 import jakarta.annotation.Resource;
 import org.springframework.security.authentication.AuthenticationProvider;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -20,15 +19,15 @@ import java.util.Objects;
 @Component
 public class PwdAuthenticationProvider implements AuthenticationProvider {
 
-    @Resource
-    private UserService userService;
+    //@Resource
+    //private UserService userService;
 
     @Override
     public Authentication authenticate(Authentication authentication) throws AuthenticationException {
         UsernamePasswordAuthenticationToken token = (UsernamePasswordAuthenticationToken) authentication;
         String name = token.getName();
         String pwd = token.getCredentials().toString();
-        UserDetails userDetails = userService.loadUserByUsername("");
+        //UserDetails userDetails = userService.loadUserByUsername("");
         if (!Objects.equals("zfy",name)){
             throw new UsernameNotFoundException("");
         }

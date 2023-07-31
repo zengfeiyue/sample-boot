@@ -2,9 +2,9 @@ package com.sample.infra.exception;
 
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.exc.InvalidFormatException;
-import com.sample.infra.enums.ResponseEnum;
-import com.sample.infra.common.web.Response;
 import com.sample.infra.enums.BaseResponse;
+import com.sample.infra.enums.ResponseEnum;
+import com.sample.infra.web.Response;
 import jakarta.servlet.http.HttpServletRequest;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -18,6 +18,7 @@ import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.MissingServletRequestParameterException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
+
 import java.util.List;
 
 /**
