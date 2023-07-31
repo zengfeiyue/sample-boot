@@ -10,7 +10,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
-    <groupId>com.sample-</groupId>
+    <groupId>com.sample</groupId>
     <artifactId>sample-domain</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>sample-domain</name>
@@ -27,16 +27,12 @@
             <groupId>com.sample</groupId>
             <artifactId>sample-infrastructure</artifactId>
             <version>0.0.1-SNAPSHOT</version>
-            <scope>compile</scope>
         </dependency>
     </dependencies>
 
     <build>
         <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
+
         </plugins>
     </build>
 

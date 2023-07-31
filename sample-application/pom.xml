@@ -27,9 +27,12 @@
             <groupId>com.sample</groupId>
             <artifactId>sample-infrastructure</artifactId>
             <version>0.0.1-SNAPSHOT</version>
-            <scope>compile</scope>
         </dependency>
-
+        <dependency>
+            <groupId>com.sample</groupId>
+            <artifactId>sample-domain</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 
     <build>
