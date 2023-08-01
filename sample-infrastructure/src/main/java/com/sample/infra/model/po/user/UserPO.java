@@ -1,4 +1,4 @@
-package com.sample.infra.po.user;
+package com.sample.infra.model.po.user;
 
 import java.io.Serializable;
 
