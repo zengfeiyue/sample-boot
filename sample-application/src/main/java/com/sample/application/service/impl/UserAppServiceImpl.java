@@ -6,4 +6,13 @@ package com.sample.application.service.impl;
  * @author zengfeiyue
  */
 public class UserAppServiceImpl implements UserAppService {
+    @Override
+    public void createUser() {
+
+    }
+
+    @Override
+    public void deleteUser() {
+
+    }
 }
