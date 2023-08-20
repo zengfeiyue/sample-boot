@@ -1,7 +1,7 @@
 package com.sample.infra.repository.user;
 
 
-import com.sample.domain.user.model.User;
+import com.sample.domain.user.model.AuthUser;
 import com.sample.domain.user.repository.UserRepository;
 import org.springframework.stereotype.Component;
 
@@ -19,12 +19,12 @@ public class UserRepositoryImpl implements UserRepository {
     }
 
     @Override
-    public User getById(Integer id) {
+    public AuthUser getById(Integer id) {
         return null;
     }
 
     @Override
-    public <S extends User> S save(S s) {
+    public <S extends AuthUser> S save(S s) {
         return null;
     }
 }

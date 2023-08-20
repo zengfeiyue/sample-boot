@@ -1,0 +1,16 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/sample?serverTimezone=Hongkong&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL
+    username: root
+    password: Aa123456
+    hikari:
+      connection-timeout: 30000 #连接超时时间 - 默认值：30秒。
+      idle-timeout: 600000 # 连接池中允许闲置的最长时间 - 默认值：10分钟
+      max-lifetime: 1800000 # 一个连接生命时长（毫秒），超时而没被使用则被释放 - 默认值：30分钟
+      maximum-pool-size: 100 # 连接池中允许的最大连接数，包括闲置和使用中的连接 - 默认值：10
+      minimum-idle: 10 # 连接池中允许的最小空闲连接数 - 默认值：10。
+      pool-name: HikaraPool-1
