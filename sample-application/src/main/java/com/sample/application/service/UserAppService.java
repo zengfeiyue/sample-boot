@@ -1,4 +1,4 @@
-package com.sample.application.service.impl;
+package com.sample.application.service;
 
 /**
  * 用户服务

@@ -1,5 +1,6 @@
 package com.sample.application.service.impl;
 
+import com.sample.application.service.UserAppService;
 import com.sample.domain.user.model.AuthUser;
 import com.sample.domain.user.repository.UserRepository;
 import jakarta.annotation.Resource;

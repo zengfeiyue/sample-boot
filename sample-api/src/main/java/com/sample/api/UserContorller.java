@@ -1,7 +1,7 @@
 package com.sample.api;
 
 import com.sample.api.cmd.CreateUserCmd;
-import com.sample.application.service.impl.UserAppService;
+import com.sample.application.service.UserAppService;
 import jakarta.annotation.Resource;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestBody;
