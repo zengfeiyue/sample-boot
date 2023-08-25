@@ -1,8 +1,8 @@
-package com.sample.infra.repository.user;
+package com.sample.infra.persistence;
 
 
-import com.sample.domain.user.model.AuthUser;
-import com.sample.domain.user.repository.UserRepository;
+import com.sample.domain.model.entity.AuthUser;
+import com.sample.domain.repository.UserRepository;
 import org.springframework.stereotype.Component;
 
 /**

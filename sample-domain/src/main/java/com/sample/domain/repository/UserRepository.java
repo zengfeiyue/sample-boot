@@ -1,8 +1,8 @@
-package com.sample.domain.user.repository;
+package com.sample.domain.repository;
 
 
 import com.sample.ddd.core.repository.Repository;
-import com.sample.domain.user.model.AuthUser;
+import com.sample.domain.model.entity.AuthUser;
 
 /**
  * 用户仓储

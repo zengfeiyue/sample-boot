@@ -1,8 +1,8 @@
 package com.sample.application.service.impl;
 
 import com.sample.application.service.UserAppService;
-import com.sample.domain.user.model.AuthUser;
-import com.sample.domain.user.repository.UserRepository;
+import com.sample.domain.model.entity.AuthUser;
+import com.sample.domain.repository.UserRepository;
 import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.util.Assert;

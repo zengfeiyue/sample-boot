@@ -1,6 +1,8 @@
-package com.sample.domain.user.model;
+package com.sample.domain.model.entity;
 
 import com.sample.ddd.core.entity.AggregateRoot;
+import com.sample.domain.model.valueobject.UserAccount;
+import com.sample.domain.model.valueobject.UserInfo;
 import com.sample.domain.user.model.valueobject.*;
 
 import java.util.List;

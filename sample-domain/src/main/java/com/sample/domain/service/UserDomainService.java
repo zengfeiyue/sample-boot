@@ -1,4 +1,4 @@
-package com.sample.domain.user.service;
+package com.sample.domain.service;
 
 /**
  * 用户领域服务接口

@@ -1,7 +1,7 @@
 package com.sample.application.assembler;
 
-import com.sample.application.dto.command.CreateUserCommand;
-import com.sample.domain.user.model.AuthUser;
+import com.sample.application.command.CreateUserCommand;
+import com.sample.domain.model.entity.AuthUser;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.Mappings;

@@ -1,6 +1,6 @@
-package com.sample.domain.user.service.impl;
+package com.sample.domain.service.impl;
 
-import com.sample.domain.user.service.UserDomainService;
+import com.sample.domain.service.UserDomainService;
 import org.springframework.stereotype.Component;
 
 /**

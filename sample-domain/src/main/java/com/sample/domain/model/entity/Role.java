@@ -1,4 +1,4 @@
-package com.sample.domain.user.model;
+package com.sample.domain.model.entity;
 
 import com.sample.ddd.core.entity.AggregateRoot;
 

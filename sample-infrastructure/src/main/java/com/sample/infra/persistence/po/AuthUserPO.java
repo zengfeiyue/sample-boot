@@ -1,4 +1,4 @@
-package com.sample.infra.model.po.user;
+package com.sample.infra.persistence.po;
 
 import java.io.Serializable;
 import java.time.LocalTime;

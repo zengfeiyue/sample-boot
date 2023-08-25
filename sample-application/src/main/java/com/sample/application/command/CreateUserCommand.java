@@ -1,7 +1,7 @@
-package com.sample.application.dto.command;
+package com.sample.application.command;
 
 import com.sample.application.assembler.UserAssembler;
-import com.sample.domain.user.model.AuthUser;
+import com.sample.domain.model.entity.AuthUser;
 
 /**
  * 创建用户

@@ -1,4 +1,4 @@
-package com.sample.domain.user.model.valueobject;
+package com.sample.domain.model.valueobject;
 
 /**
  * 用户账号信息
