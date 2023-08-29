@@ -1,7 +1,7 @@
 package com.sample.domain.repository;
 
 
-import com.sample.ddd.core.repository.Repository;
+import com.sample.ddd.core.ddd.repository.Repository;
 import com.sample.domain.model.entity.User;
 
 /**

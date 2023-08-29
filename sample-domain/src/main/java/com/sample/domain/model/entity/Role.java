@@ -1,6 +1,7 @@
 package com.sample.domain.model.entity;
 
-import com.sample.ddd.core.entity.AggregateRoot;
+
+import com.sample.ddd.core.ddd.entity.AggregateRoot;
 
 /**
  * 角色

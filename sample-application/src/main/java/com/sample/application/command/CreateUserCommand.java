@@ -1,6 +1,7 @@
 package com.sample.application.command;
 
 import com.sample.application.assembler.UserAssembler;
+import com.sample.ddd.core.cqrs.command.Command;
 import com.sample.domain.model.entity.User;
 
 /**
@@ -8,7 +9,7 @@ import com.sample.domain.model.entity.User;
  *
  * @author laiqiao
  */
-public class CreateUserCommand {
+public class CreateUserCommand implements Command {
 
     private String name;
 

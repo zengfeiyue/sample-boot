@@ -1,8 +1,9 @@
 package com.sample.domain.model.entity;
 
-import com.sample.ddd.core.entity.AggregateRoot;
+import com.sample.ddd.core.ddd.entity.AggregateRoot;
 import com.sample.domain.model.valueobject.UserAccount;
 import com.sample.domain.model.valueobject.UserInfo;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 
 import java.util.List;
@@ -14,6 +15,7 @@ import java.util.List;
  * @author laiqiao
  */
 @Getter
+@AllArgsConstructor
 public class User implements AggregateRoot {
     /**
      * 用户id
