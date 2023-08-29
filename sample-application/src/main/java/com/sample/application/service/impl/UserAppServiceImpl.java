@@ -1,7 +1,8 @@
 package com.sample.application.service.impl;
 
+import com.sample.application.assembler.UserAssembler;
 import com.sample.application.service.UserAppService;
-import com.sample.domain.model.entity.AuthUser;
+import com.sample.domain.model.entity.User;
 import com.sample.domain.repository.UserRepository;
 import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
@@ -20,8 +21,8 @@ public class UserAppServiceImpl implements UserAppService {
 
     @Override
     public void createUser() {
-        AuthUser byId = userRepository.getById(1);
-        Assert.notNull(byId,"用户已存在");
+        User user = UserAssembler.INSTANCE.toUser(null);
+
     }
 
     @Override

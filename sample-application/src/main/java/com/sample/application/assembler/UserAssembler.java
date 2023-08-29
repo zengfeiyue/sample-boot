@@ -1,7 +1,7 @@
 package com.sample.application.assembler;
 
 import com.sample.application.command.CreateUserCommand;
-import com.sample.domain.model.entity.AuthUser;
+import com.sample.domain.model.entity.User;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.Mappings;
@@ -13,7 +13,7 @@ public interface UserAssembler{
     @Mappings({
             @Mapping(source = "name", target = "account.account"),
     })
-    AuthUser toUser(CreateUserCommand createUserCommand);
+    User toUser(CreateUserCommand createUserCommand);
 
 
 }

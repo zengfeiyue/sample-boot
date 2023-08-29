@@ -1,7 +1,7 @@
 package com.sample.application.command;
 
 import com.sample.application.assembler.UserAssembler;
-import com.sample.domain.model.entity.AuthUser;
+import com.sample.domain.model.entity.User;
 
 /**
  * 创建用户
@@ -26,7 +26,7 @@ public class CreateUserCommand {
 
     public static void main(String[] args) {
         CreateUserCommand createUserCommand = new CreateUserCommand("zfy");
-        AuthUser authUser = UserAssembler.INSTANCE.toUser(createUserCommand);
+        User authUser = UserAssembler.INSTANCE.toUser(createUserCommand);
         System.err.println(authUser.getAccount().getAccount());
     }
 }
