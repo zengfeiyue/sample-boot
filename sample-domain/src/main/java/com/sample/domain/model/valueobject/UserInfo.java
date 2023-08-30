@@ -1,10 +1,15 @@
 package com.sample.domain.model.valueobject;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import org.springframework.util.Assert;
+
 /**
  * 用户基本信息
  *
  * @author laiqiao
  */
+@Getter
 public class UserInfo {
 
     /**
@@ -31,4 +36,17 @@ public class UserInfo {
      * 头像
      */
     private String avatarUrl;
+
+    public UserInfo(String userName, String nickName, Integer sex, String phone, String avatarUrl) {
+        checkUserName(userName);
+        this.userName = userName;
+        this.nickName = nickName;
+        this.sex = sex;
+        this.phone = phone;
+        this.avatarUrl = avatarUrl;
+    }
+
+    private void checkUserName(String userName) {
+        Assert.hasText(userName,"用户名不能为空！");
+    }
 }

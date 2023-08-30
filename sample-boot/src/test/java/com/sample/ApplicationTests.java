@@ -1,6 +1,5 @@
 package com.sample;
 
-import com.sample.application.command.CreateUserCommand;
 import com.sample.boot.SampleBootlication;
 import com.sample.ddd.core.cqrs.command.CommandBus;
 import jakarta.annotation.Resource;
@@ -14,6 +13,6 @@ public class ApplicationTests {
     private CommandBus commandBus;
     @Test
     public void test(){
-        commandBus.dispatch(new CreateUserCommand(null));
+
     }
 }

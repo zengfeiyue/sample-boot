@@ -1,19 +1,25 @@
 package com.sample.application.assembler;
 
-import com.sample.application.command.CreateUserCommand;
-import com.sample.domain.model.entity.User;
+import com.sample.application.command.CreateUserCmd;
+import com.sample.domain.model.entity.UserEntity;
 import org.mapstruct.Mapper;
-import org.mapstruct.Mapping;
-import org.mapstruct.Mappings;
 import org.mapstruct.factory.Mappers;
 
+/**
+ * 用户转换器
+ * @author laiqiao
+ */
 @Mapper
-public interface UserAssembler{
+public interface UserAssembler {
     UserAssembler INSTANCE = Mappers.getMapper(UserAssembler.class);
-    @Mappings({
-            @Mapping(source = "name", target = "account.account"),
-    })
-    User toUser(CreateUserCommand createUserCommand);
+
+    /**
+     * 命令转换层实体
+     *
+     * @param createUserCmd
+     * @return
+     */
+    UserEntity toEntity(CreateUserCmd createUserCmd);
 
 
 }

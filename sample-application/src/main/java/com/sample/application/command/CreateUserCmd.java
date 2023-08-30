@@ -1,6 +1,7 @@
-package com.sample.domain.model.entity;
+package com.sample.application.command;
 
-import com.sample.ddd.core.ddd.entity.AggregateRoot;
+import com.sample.ddd.core.cqrs.command.Command;
+import com.sample.domain.model.valueobject.RoleValue;
 import com.sample.domain.model.valueobject.UserAccount;
 import com.sample.domain.model.valueobject.UserInfo;
 import lombok.AllArgsConstructor;
@@ -8,19 +9,14 @@ import lombok.Getter;
 
 import java.util.List;
 
-
 /**
- * 用户聚合根
+ * 创建用户
  *
  * @author laiqiao
  */
-@Getter
 @AllArgsConstructor
-public class User implements AggregateRoot {
-    /**
-     * 用户id
-     */
-    private Integer userId;
+@Getter
+public class CreateUserCmd implements Command {
 
     /**
      * 用户账号信息
@@ -35,7 +31,6 @@ public class User implements AggregateRoot {
     /**
      *  角色集合
      */
-    private List<Role> roles;
-
+    private List<RoleValue> roles;
 
 }

@@ -4,13 +4,16 @@ import com.sample.ddd.core.cqrs.command.CommandHandler;
 import org.springframework.stereotype.Component;
 
 /**
+ * 创建用户
  *
  * @author laiqiao
  */
 @Component
-public class CreateOrderCommandHandler implements CommandHandler<CreateUserCommand> {
+public class CreateUserCommandHandler implements CommandHandler<CreateUserCmd> {
+
+
     @Override
-    public void handle(CreateUserCommand createUserCommand) {
+    public void handle(CreateUserCmd createUserCommand) {
         System.err.println(createUserCommand);
     }
 }

@@ -7,7 +7,7 @@ import com.sample.ddd.core.ddd.entity.AggregateRoot;
  * 角色
  * @author laiqiao
  */
-public class Role implements AggregateRoot {
+public class RoleEntity implements AggregateRoot {
 
 
 }

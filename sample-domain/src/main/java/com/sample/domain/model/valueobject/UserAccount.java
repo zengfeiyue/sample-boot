@@ -1,10 +1,15 @@
 package com.sample.domain.model.valueobject;
 
+import lombok.Getter;
+import org.springframework.util.Assert;
+import org.springframework.util.StringUtils;
+
 /**
  * 用户账号信息
  *
  * @author laiqiao
  */
+@Getter
 public class UserAccount {
 
     /**
@@ -22,28 +27,21 @@ public class UserAccount {
      */
     private Integer status;
 
-
-    public String getAccount() {
-        return account;
-    }
-
-    public void setAccount(String account) {
+    public UserAccount(String account, String password, Integer status) {
+        checkAccount(account);
+        checkPassword(password);
         this.account = account;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
         this.password = password;
-    }
-
-    public Integer getStatus() {
-        return status;
-    }
-
-    public void setStatus(Integer status) {
         this.status = status;
+    }
+
+
+
+    private void checkAccount(String account) {
+        Assert.hasText(account,"不能为空");
+    }
+
+    private void checkPassword(String password) {
+        Assert.hasText(password,"不能为空");
     }
 }

@@ -1,7 +1,6 @@
 package com.sample.infra.persistence;
 
-
-import com.sample.domain.model.entity.User;
+import com.sample.domain.model.entity.UserEntity;
 import com.sample.domain.repository.UserRepository;
 import org.springframework.stereotype.Component;
 
@@ -19,12 +18,12 @@ public class UserRepositoryImpl implements UserRepository {
     }
 
     @Override
-    public User getById(Integer id) {
+    public UserEntity getById(Integer id) {
         return null;
     }
 
     @Override
-    public <S extends User> S save(S s) {
+    public <S extends UserEntity> S save(S s) {
         return null;
     }
 }
