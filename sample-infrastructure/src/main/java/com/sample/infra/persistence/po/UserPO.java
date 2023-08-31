@@ -1,5 +1,6 @@
 package com.sample.infra.persistence.po;
 
+import jakarta.persistence.*;
 import java.io.Serializable;
 import java.time.LocalTime;
 
@@ -8,10 +9,15 @@ import java.time.LocalTime;
  *
  * @author laiqiao
  */
-public class AuthUserPO implements Serializable {
+@Entity
+@Table(name = "auth_user")
+public class UserPO implements Serializable {
     /**
      * 用户id
      */
+    @Id
+    @Column(name = "id")
+    @GeneratedValue(strategy= GenerationType.IDENTITY)
     private Integer userId;
 
     /**

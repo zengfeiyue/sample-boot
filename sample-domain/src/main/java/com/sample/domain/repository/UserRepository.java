@@ -11,4 +11,10 @@ import com.sample.domain.model.entity.UserEntity;
  */
 public interface UserRepository extends Repository<UserEntity,Integer> {
 
+    /**
+     * 根据账号查找实体
+     * @param account
+     * @return
+     */
+    UserEntity findByAccount(String account);
 }

@@ -1,6 +1,5 @@
 package com.sample;
 
-import com.sample.boot.SampleBootlication;
 import com.sample.ddd.core.cqrs.command.CommandBus;
 import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;

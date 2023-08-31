@@ -3,4 +3,4 @@
  *
  * @author zengfeiyue
  */
-package com.sample.boot;
+package com.sample;

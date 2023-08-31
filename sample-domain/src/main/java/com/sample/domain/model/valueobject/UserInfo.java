@@ -38,15 +38,10 @@ public class UserInfo {
     private String avatarUrl;
 
     public UserInfo(String userName, String nickName, Integer sex, String phone, String avatarUrl) {
-        checkUserName(userName);
         this.userName = userName;
         this.nickName = nickName;
         this.sex = sex;
         this.phone = phone;
         this.avatarUrl = avatarUrl;
-    }
-
-    private void checkUserName(String userName) {
-        Assert.hasText(userName,"用户名不能为空！");
     }
 }
