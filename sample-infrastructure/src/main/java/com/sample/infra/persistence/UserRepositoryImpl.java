@@ -8,6 +8,8 @@ import com.sample.infra.persistence.po.UserPOAssembler;
 import jakarta.annotation.Resource;
 import org.springframework.stereotype.Component;
 
+import java.util.Optional;
+
 /**
  * 用户仓储
  *
@@ -26,15 +28,17 @@ public class UserRepositoryImpl implements UserRepository {
 
     @Override
     public UserEntity getById(Integer id) {
-        userJpaRepository.findById(id);
-        return null;
+        Optional<UserPO> byId = userJpaRepository.findById(id);
+        UserPO po = byId.orElse(null);
+        return UserPOAssembler.INSTANCE.toEntity(po);
+
     }
 
     @Override
     public UserEntity save(UserEntity s) {
         UserPO userPO = UserPOAssembler.INSTANCE.toPo(s);
         UserPO save = userJpaRepository.save(userPO);
-        return null;
+        return UserPOAssembler.INSTANCE.toEntity(save);
     }
 
     @Override

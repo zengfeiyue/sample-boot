@@ -1,6 +1,7 @@
-package com.sample.application.command;
+package com.sample.application.command.handler;
 
 import com.sample.application.assembler.UserAssembler;
+import com.sample.application.command.CreateUserCmd;
 import com.sample.ddd.core.cqrs.command.CommandHandler;
 import com.sample.domain.model.entity.UserEntity;
 import com.sample.domain.repository.UserRepository;
