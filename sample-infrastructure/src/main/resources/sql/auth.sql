@@ -17,7 +17,7 @@ CREATE TABLE `auth_user`
     PRIMARY KEY (`id`)
 ) ENGINE = INNODB
   AUTO_INCREMENT = 2
-  DEFAULT CHARSET = utf8mb4 COMMENT ='用户表'
+  DEFAULT CHARSET = utf8mb4 COMMENT ='用户表';
 
 
 CREATE TABLE `auth_role`
@@ -33,7 +33,7 @@ CREATE TABLE `auth_role`
     PRIMARY KEY (`id`)
 ) ENGINE = INNODB
   AUTO_INCREMENT = 2
-  DEFAULT CHARSET = utf8mb4 COMMENT ='角色表'
+  DEFAULT CHARSET = utf8mb4 COMMENT ='角色表';
 
 CREATE TABLE `auth_user_role`
 (
@@ -47,7 +47,7 @@ CREATE TABLE `auth_user_role`
     PRIMARY KEY (`id`)
 ) ENGINE = INNODB
   AUTO_INCREMENT = 2
-  DEFAULT CHARSET = utf8mb4 COMMENT ='用户角色表'
+  DEFAULT CHARSET = utf8mb4 COMMENT ='用户角色表';
 
 CREATE TABLE `auth_permission`
 (
@@ -60,7 +60,7 @@ CREATE TABLE `auth_permission`
     `is_frame`    TINYINT(1) DEFAULT 0 COMMENT '是否为外链（0是 1否）',
     `type`        TINYINT(1) DEFAULT 0 COMMENT '权限类型（1菜单 2按钮）',
     `visible`     TINYINT(1) DEFAULT 0 COMMENT '显示状态（0显示 1隐藏）',
-    `status`      TINYINT(1) DEFAULT 0COMMENT '权限状态（0正常 1停用）',
+    `status`      TINYINT(1) DEFAULT 0 COMMENT '权限状态（0正常 1停用）',
     `perms`       varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT '权限标识',
     `icon`        varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT '#' COMMENT '图标',
     `create_by`   varchar(64) COLLATE utf8mb4_unicode_ci  DEFAULT '' COMMENT '创建者',
@@ -68,5 +68,5 @@ CREATE TABLE `auth_permission`
     `update_by`   varchar(64) COLLATE utf8mb4_unicode_ci  DEFAULT '' COMMENT '更新者',
     `update_time` datetime                                DEFAULT NULL COMMENT '更新时间',
     `remark`      varchar(500) COLLATE utf8mb4_unicode_ci DEFAULT '' COMMENT '备注',
-    PRIMARY KEY (`menu_id`)
+    PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='系统权限表';
